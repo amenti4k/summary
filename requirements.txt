@@ -1,0 +1,7 @@
+streamlit
+PyPDF2
+openai
+tenacity
+packaging>=23.2,<24.0
+anthropic>=0.7.0
+requests
