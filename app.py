@@ -167,10 +167,10 @@ def display_dashboard(details):
 
 def main():
     # Read API key from secrets
-    api_key = st.secrets["ANTHROPIC_API_KEY"]
+    api_key = st.secrets["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"]
     set_api_key(api_key)
     
-    st.set_page_config(page_title="Invoice Analyzer", layout="wide")
+    st.set_page_config(page_title="Invoice Analyzer - Quick Mockup for Didero", layout="wide")
     
     # Add custom CSS
     st.markdown("""
@@ -198,7 +198,7 @@ def main():
 
     st.markdown("""
         <div class="upload-section">
-            <h1 class="main-title">📄 Invoice Analysis System</h1>
+            <h1 class="main-title">📄 Invoice Analysis - Quick Mockup for Didero</h1>
             <p class="subtitle">Upload your invoice for instant analysis and insights</p>
         </div>
     """, unsafe_allow_html=True)
