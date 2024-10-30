@@ -166,11 +166,11 @@ def display_dashboard(details):
             st.error("Unable to process questions without document context.")
 
 def main():
-    # Read API key from secrets
-    api_key = st.secrets["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"]
+    # Read API key from secrets correctly
+    api_key = st.secrets["ANTHROPIC_API_KEY"]  # Use the key name, not the value
     set_api_key(api_key)
     
-    st.set_page_config(page_title="Invoice Analyzer - Quick Mockup for Didero", layout="wide")
+    st.set_page_config(page_title="Invoice Analyzer", layout="wide")
     
     # Add custom CSS
     st.markdown("""
